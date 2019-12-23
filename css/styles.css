@@ -1,0 +1,130 @@
+/* Andrea Ferrante CSS*/
+
+/* FONT*/
+@font-face {
+  font-family: 'TheBlacklist';
+  src: url('../font/TheBlacklist.woff') format("woff");
+}
+@font-face{
+	font-family: 'Rubik Bold';
+	src: url('../font/Rubik-Bold.woff')  format("woff");
+}
+
+@font-face{
+	font-family: 'Rubik';
+	src: url('../font/Rubik-Light.woff') format("woff");
+}
+/* BASE HTML */
+.page {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu {
+  height: 100px;
+  background-color: #5995DA;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 35%;
+  float: left;
+  font-family: 'Rubik', sans-serif
+}
+
+.contentBase {
+  width: 65%;
+  float: left;
+}
+
+.footer {
+  height: 100px;
+  clear: both;
+  background-color: #5995DA;
+}
+/* sidebar */
+.profiloImg{
+  text-align: center;
+  padding: 10px;
+}
+.fullStack{
+  margin-left: auto;
+  margin-right:
+  auto;text-align: center;
+}
+.imgFS{
+  width: 30px;
+  height: 30px;
+}
+
+.nome{
+  font-family: 'TheBlacklist', sans-serif;
+  font-size: 40px;
+  margin:0 auto;
+  color: white;
+}
+.sottoNome{
+  font-family: 'TheBlacklist', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin:0 auto;
+  color: white;
+}
+
+/* contentBase */
+.article-title{
+  clear: both;
+	font-size: 20px;
+	font-family: 'Rubik Bold';
+	margin: 3px;
+}
+
+.article{
+	margin: 20px;
+	padding: 5px;
+	border-radius: 20px;
+  font-family: 'Rubik';
+}
+.content{
+	font-size: 15px;
+	margin: 0;
+}
+/* FOOTER */
+.logo{
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+  background: white;
+  margin: 2px;
+}
+.links{
+  float: left;
+  width: 20%;
+  margin: 20px 1.15%;
+  height: 160px;
+  text-align: center;
+}
+
+/* RIDUZIONE SCHERMO*/
+@media only screen and (max-width: 600px) {
+  .sidebar ,.contentBase{
+    float: none;
+    width: 100%;
+  }
+  .article-title{
+  	font-size: 20px;
+  }
+  .article{
+  	margin: 10px;
+  	padding: 2px;
+  }
+  .content{
+  	font-size: 15px;
+  	margin: 0;
+  }
+  .imgFS{
+    width: 25px;
+    height: 25px;
+  }
+}
